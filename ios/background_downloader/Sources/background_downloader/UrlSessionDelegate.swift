@@ -12,7 +12,7 @@ import os.log
 public class UrlSessionDelegate : NSObject, URLSessionDelegate, URLSessionDownloadDelegate, URLSessionDataDelegate {
     
     static let instance = UrlSessionDelegate()
-    static var urlSession: URLSession?
+    public static var urlSession: URLSession?
     public static var sessionIdentifier = "com.bbflight.background_downloader.Downloader"
     public static var backgroundCompletionHandler: (() -> Void)?
     
